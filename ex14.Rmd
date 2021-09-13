@@ -2,7 +2,9 @@
 title: "BIO0039 - Exercício prático aula 14"
 author: "Peter Lowenberg Neto"
 date: "17/09/2021"
-output: html_document
+output: 
+  pdf_document: 
+    keep_tex: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -35,7 +37,8 @@ library(ape)
 ```
 
 ### 4. Determinar a pasta de trabalho (arquivo onde estão os dados) 
-Aqui você deve mudar o endereço para a sua pasta.
+Aqui você deve mudar o endereço para a sua pasta.   
+Nesta pasta você irá salvar o arquivo platytree.newick que está no Moodle.
 
 ```{r eval = FALSE}
 setwd("D:/Usuários/peter/OneDrive/R/LTT")
@@ -62,6 +65,6 @@ O eixo x representa o tempo e o eixo y representa o número de linhagens.
 ltt.plot(af)
 ```
 
-#### 8. Salvar figura de linhagens ao longo do tempo e enviar via Moodle.
+### 8. Salvar figura de linhagens ao longo do tempo e enviar via Moodle.
 
 
