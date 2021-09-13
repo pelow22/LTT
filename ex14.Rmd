@@ -1,6 +1,6 @@
 ---
-title: "BIO0039 - Exercício prático aula 14"
-author: "Peter Lowenberg Neto"
+title: "UNILA/BIO0039 - Exercício prático aula 14"
+author: "Peter Löwenberg Neto"
 date: "17/09/2021"
 output: 
   pdf_document: 
@@ -22,7 +22,8 @@ Instalar o R (https://www.r-project.org/).
 
 Instalar o RStudio (https://www.rstudio.com/products/rstudio/download/).
 
-#### 2.1 Instalar o pacote no R
+#### 2.1 Instalar o pacote no R   
+
 Executar o RStudio e na linha de comando instalar o pacote
 
 ```{r eval = FALSE}
