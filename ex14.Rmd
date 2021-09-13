@@ -1,0 +1,67 @@
+---
+title: "BIO0039 - Exercício prático aula 14"
+author: "Peter Lowenberg Neto"
+date: "17/09/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### 1. Objetivo do exercício
+
+Neste exercício você irá abrir e plotar uma filogenia. Depois irá obter o número de linhagens ao longo do tempo.
+Para realizar este exercício você deverá instalr o programa R e o programa RStudio em seu computador.
+
+### 2. Instalação
+
+Instalar o R (https://www.r-project.org/).
+
+Instalar o RStudio (https://www.rstudio.com/products/rstudio/download/).
+
+#### 2.1 Instalar o pacote no R
+Executar o RStudio e na linha de comando instalar o pacote
+
+```{r eval = FALSE}
+install.packages('ape')
+```
+
+
+### 3. Carregar o pacote ape
+
+```{r warning = FALSE}
+library(ape)
+```
+
+### 4. Determinar a pasta de trabalho (arquivo onde estão os dados) 
+Aqui você deve mudar o endereço para a sua pasta.
+
+```{r eval = FALSE}
+setwd("D:/Usuários/peter/OneDrive/R/LTT")
+```
+
+
+### 5. Carregar a árvore filogenética do arquivo
+Vamos criar um objeto (af) que conterá nossa árvore filogenética.
+```{r}
+af <- read.tree(file = "platytree.newick")
+af
+```
+
+### 6. Plotar a árvore filogenética
+Observe que a árvore apresenta os comprimentos de ramos proporcionais ao tempo. Ou seja, é uma filogenia com calibração temporal (= cronograma).
+```{r}
+plot(af, cex = 0.5)
+```
+
+### 7. Obter o número de linhagens ao longo do tempo.
+Observe o número de linhagens existentes ao longo do tempo.  
+O eixo x representa o tempo e o eixo y representa o número de linhagens.
+```{r}
+ltt.plot(af)
+```
+
+#### 8. Salvar figura de linhagens ao longo do tempo e enviar via Moodle.
+
+
